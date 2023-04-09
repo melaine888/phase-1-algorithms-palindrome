@@ -1,7 +1,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
-
+    var i,wLength = word.length-1,wLengthToCompare = wLength/2;
+ 
+    for (i = 0; i <= wLengthToCompare ; i++) {
+      if (word.charAt(i) != word.charAt(wLength-i)) {
+         return false;
+      }
+    }
+    return true;
+ }
 /* 
   Add your pseudocode here
 */
